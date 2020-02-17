@@ -26,16 +26,6 @@ function App() {
         >
           Learn about {featureToggles.tacos ? ' Tacos' : ' React'}
         </a>
-        <p>
-          This is just a demo for DevTools. To enable the DevTools (even in
-          production), add "<code>?dev-tools=true</code>" to the URL. Then
-          you'll find the DevTools on the bottom-left.
-        </p>
-        <p>
-          <a href="https://github.com/kentcdodds/app-dev-tools">
-            View Code on GitHub
-          </a>
-        </p>
       </header>
     </div>
   )
