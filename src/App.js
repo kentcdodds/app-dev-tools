@@ -36,6 +36,18 @@ function App() {
             View Code on GitHub
           </a>
         </p>
+        <p>
+          Read{' '}
+          <a href="https://kentcdodds.com/blog/make-your-own-dev-tools">
+            the blog post.
+          </a>
+        </p>
+        <p>
+          Watch{' '}
+          <a href="https://egghead.io/lessons/javascript-create-app-devtools-to-enhance-development-productivity?pl=kent-s-blog-posts-as-screencasts-eefa540c&af=5236ad">
+            the video.
+          </a>
+        </p>
       </header>
     </div>
   )
