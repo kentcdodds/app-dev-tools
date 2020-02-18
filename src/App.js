@@ -27,10 +27,36 @@ function App() {
           Learn about {featureToggles.tacos ? ' Tacos' : ' React'}
         </a>
         <p>
-          This is just a demo for DevTools. To enable the DevTools (even in
-          production), add "<code>?dev-tools=true</code>" to the URL. Then
-          you'll find the DevTools on the bottom-left.
+          This is just a demo for DevTools.{' '}
+          {window.devToolsEnabled ? (
+            <>
+              DevTools are enabled. The UI for the DevTools appears in the
+              bottom left. Add{' '}
+              <a href="/?dev-tools=false">
+                "<code>?dev-tools=false</code>"
+              </a>{' '}
+              to the URL to explicitely disable them (though in production they
+              are disabled by default)
+            </>
+          ) : (
+            <>
+              DevTools are disabled. Add{' '}
+              <a href="/?dev-tools=true">
+                "<code>?dev-tools=true</code>"
+              </a>{' '}
+              to the URL to explicitely enable them (though in development they
+              are enabled by default). The DevTools UI will appear in the bottom
+              left.
+            </>
+          )}
         </p>
+        {process.env.NODE_ENV === 'production' ? (
+          <p>
+            Notice that these work even in production! But it doesn't cost
+            anything to have them available for users who don't use them. Read
+            the blog post to learn how.
+          </p>
+        ) : null}
         <p>
           <a href="https://github.com/kentcdodds/app-dev-tools">
             View Code on GitHub

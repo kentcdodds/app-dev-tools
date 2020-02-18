@@ -4,6 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 function install() {
+  window.devToolsEnabled = true
   // load local dev tools if it's there
   // NOTE: this is using some webpack-sepecific features.
   // if you're not using webpack, you might consider using
